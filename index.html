@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Surya Augusto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .border-custom {
+            border-color: rgb(108, 99, 255);
+        }
+
+        .bg-custom {
+            background-color: rgb(108, 99, 255);
+        }
+
+        .text-custom {
+            color: rgb(108, 99, 255);
+        }
+
+        .image-box {
+            position: relative;
+            background-color: red;
+            width: 100%;
+            height: 25rem;
+            border-radius: 20px;
+        }
+
+        .overlay-box {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        footer {
+            background-color: #6C63FF;
+            width: 100%;
+            height: 250px;
+            position: relative;
+        }
+
+        .social-section {
+            position: absolute;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 40px;
+            top: 70px;
+            bottom: 0;
+            gap: 10px;
+        }
+
+        .social-box {
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            width: 3rem;
+            color: white;
+        }
+
+        .copyright {
+            padding-bottom: 10px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            font-weight: bolder;
+            color: white;
+            bottom: 0;
+        }
+
+        .scrolled {
+            transition: background-color 500ms linear;  
+            border-bottom: 2px solid black;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+        }
+
+        .job-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background-color: rgb(108, 99, 255);
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .job-line {
+            width: 100%;
+            height: 0.5px;
+            background-color: grey;
+        }
+
+        .box-experience {
+            min-width: 30rem;
+            max-width: 30rem;
+        }
+
+        .company-content {
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .company-position {
+            font-weight: bold;
+        }
+
+        .company-name {
+            font-weight: bolder;
+        }
+
+        .company-description {
+            max-width: 28rem;
+            margin-top: 10px;
+        }
+
+        .line-story {
+            height: 3rem;
+            border-left: 2px solid rgb(108, 99, 255);
+            margin-left: 50px;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .link {
+            text-decoration: none;
+        }
+
+        .project-content {
+            position: absolute;
+            bottom: 30px;
+            left: 20px;
+            z-index: 3;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-custom sticky-top" id="navbar">
+        <div class="container p-2">
+            <a class="navbar-brand text-white" href="#">Kevin Surya Augusto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#projects">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Content -->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-6 m-auto">
+                    <div class="d-flex flex-column">
+                        <h2>Hello, I'm <span class="text-custom">Kevin Surya Augusto</span></h2>
+                        <h3>Backend Developer</h3>
+                        <p class="mt-3" style="text-align: justify;">
+                            With a deep understanding of system architecture design and API integration. Focused on delivering high-quality software and optimizing system performance.
+                        </p>
+                        <div class="d-flex">
+                            <a href="#contact" class="btn btn-primary bg-custom">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope mb-1 me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                </svg>
+                                Contact me
+                            </a>
+                            <a href="https://www.linkedin.com/in/kevin-surya-6b000b1b8/" target="_blank" class="btn btn-outline-primary ms-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-linkedin mb-1 me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-6 text-center">
+                    <img src="./img/programmer.svg" alt="" width="90%" height="90%">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skill">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="d-none d-md-block col-md-6">
+                    <img src="img/percentage.svg" width="85%" height="85%" alt="">
+                </div>
+                <div class="col-sm-6 col-md-6">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <h2>My Skills</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card mb-3 border-custom">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="mb-1">NodeJS</label>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-custom" style="width: 90%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 border-custom">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="mb-1">Python</label>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-custom" style="width: 80%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 border-custom">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="mb-1">HTML/CSS</label>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-custom" style="width: 85%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 border-custom">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="mb-1">C#</label>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-custom" style="width: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 border-custom">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="mb-1">Java</label>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-custom" style="width: 45%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card mb-3 border-custom">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="mb-1">PHP</label>
+                                            <div class="progress" role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-custom" style="width: 40%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5" style="margin-bottom: 20px;">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h2>My Education</h2>
+                            <div class="text-secondary">
+                                These are some of my educational places to seek knowledge.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-12">
+                                <div class="card border-custom">
+                                    <div class="card-body">
+                                        <div class="d-flex" style="align-items: center;">
+                                            <div class="company-logo">
+                                                <img src="https://cdn2.tstatic.net/tribunnewswiki/foto/bank/images/universitas-mercu-buana-logo.jpg" alt="" width="50px" height="50px">
+                                            </div>
+                                            <div class="d-flex flex-column ms-3">
+                                                <div class="company-name h5 mb-1">Mercubuana University</div>
+                                                <div class="company-position h6 text-secondary mb-1">Informatics Engineer</div>
+                                                <div class="text-secondary">2021 - 2025</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div class="line-story"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card border-custom">
+                                    <div class="card-body">
+                                        <div class="d-flex" style="align-items: center;">
+                                            <div class="company-logo">
+                                                <img src="data:image/png;base64,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" alt="" width="50px" height="50px">
+                                            </div>
+                                            <div class="d-flex flex-column ms-2">
+                                                <div class="company-name h5 mb-1">Taruna Bhakti Vocational High School</div>
+                                                <div class="company-position h6 text-secondary">Software Engineering</div>
+                                                <div class="text-secondary">2017 - 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h2>My Experience</h2>
+                            <div class="text-secondary">
+                                These are some of my experiences during my time in the web development field.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card border-custom">
+                                <div class="card-body">
+                                    <div class="d-flex" style="align-items: center;">
+                                        <div class="company-logo">
+                                            <img src="data:image/png;base64,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" alt="" width="50px" height="50px">
+                                        </div>
+                                        <div class="d-flex flex-column ms-2">
+                                            <div class="company-name h5 mb-1">Biner Teknologi Indonesia</div>
+                                            <div class="company-position h6 text-secondary">Backend Developer</div>
+                                            <div class="text-secondary">Aug 2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="line-story"></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card border-custom">
+                                <div class="card-body">
+                                    <div class="d-flex" style="align-items: center;">
+                                        <div class="company-logo">
+                                            <img src="https://pbs.twimg.com/profile_images/1143737990092480512/ZVr8UYRS_400x400.png" alt="" width="50px" height="50px">
+                                        </div>
+                                        <div class="d-flex flex-column ms-2">
+                                            <div class="company-name h5 mb-1">Automate.id</div>
+                                            <div class="company-position h6 text-secondary">Backend Developer</div>
+                                            <div class="text-secondary">Jan 2020</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="line-story"></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card border-custom">
+                                <div class="card-body">
+                                    <div class="d-flex" style="align-items: center;">
+                                        <div class="company-logo">
+                                            <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/517c7501cd198ee04c7e326a4850ca91.png" alt="" width="50px" height="50px">
+                                        </div>
+                                        <div class="d-flex flex-column ms-3">
+                                            <div class="company-name h5 mb-1">Warehousenesia</div>
+                                            <div class="company-position h6 text-secondary mb-1">Fullstack Developer (Internship)</div>
+                                            <div class="text-secondary">Oct 2019</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="container " style="margin-bottom: 8rem;">
+            <div class="row">
+                <div class="col-12 mt-5 mb-4 text-center">
+                    <h2>My Experience</h2>
+                    <div class="text-secondary">
+                        This is some of my experience during my time in the web development field.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="w-100" style="overflow: auto;">
+                        <div class="d-flex" style="flex-wrap: nowrap; overflow: auto;" >
+                            <div class="relative w-100 box-experience">
+                                <div class="d-flex w-100" style="align-items: center;">
+                                    <div class="job-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16" style="margin: auto;">
+                                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="job-line"></div>
+                                </div>
+                                <div class="company-content">
+                                    <div class="d-flex">
+                                        <div class="company-logo">
+                                            <img src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/517c7501cd198ee04c7e326a4850ca91.png" alt="" width="50px" height="50px">
+                                        </div>
+                                        <div class="d-flex flex-column ms-2">
+                                            <div class="company-name h5 mb-1">Warehousenesia</div>
+                                            <div class="company-position h6 text-secondary">Fullstack Developer (Internship)</div>
+                                        </div>
+                                    </div>
+                                    <div class="company-description">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eaque atque autem accusantium, dignissimos mollitia laborum, cumque incidunt repellat fuga aliquam harum voluptatibus. Cum, ratione enim voluptates unde voluptatibus nesciunt.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative w-100 box-experience">
+                                <div class="d-flex w-100" style="align-items: center;">
+                                    <div class="job-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16" style="margin: auto;">
+                                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="job-line"></div>
+                                </div>
+                                <div class="company-content">
+                                    <div class="d-flex">
+                                        <div class="company-logo">
+                                            <img src="https://pbs.twimg.com/profile_images/1143737990092480512/ZVr8UYRS_400x400.png" alt="" width="50px" height="50px">
+                                        </div>
+                                        <div class="d-flex flex-column ms-2">
+                                            <div class="company-name h5 mb-1">Automate</div>
+                                            <div class="company-position h6 text-secondary">Backend Developer</div>
+                                        </div>
+                                    </div>
+                                    <div class="company-description">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eaque atque autem accusantium, dignissimos mollitia laborum, cumque incidunt repellat fuga aliquam harum voluptatibus. Cum, ratione enim voluptates unde voluptatibus nesciunt.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative w-100 box-experience">
+                                <div class="d-flex w-100" style="align-items: center;">
+                                    <div class="job-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16" style="margin: auto;">
+                                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="job-line"></div>
+                                </div>
+                                <div class="company-content">
+                                    <div class="d-flex">
+                                        <div class="company-logo">
+                                            <img src="data:image/png;base64,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" alt="" width="50px" height="50px">
+                                        </div>
+                                        <div class="d-flex flex-column ms-2">
+                                            <div class="company-name h5 mb-1">Biner Teknologi Indonesia</div>
+                                            <div class="company-position h6 text-secondary">Backend Developer</div>
+                                        </div>
+                                    </div>
+                                    <div class="company-description">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eaque atque autem accusantium, dignissimos mollitia laborum, cumque incidunt repellat fuga aliquam harum voluptatibus. Cum, ratione enim voluptates unde voluptatibus nesciunt.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="bg-custom p-3" style="border-radius: 0 0 50px 50px;" id="projects">
+        <div class="container mt-5 mb-5">
+            <div class="row mb-3">
+                <div class="col-12 text-center text-white mb-3">
+                    <h2>Projects</h2>
+                    <div class="text-white">These are some of the projects I have been involved in during my career.</div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-6 col-md-4 mb-3">
+                    <div class="image-box">
+                        <img src="./img/ushortener/ushortener_home.jpg" class="rounded"
+                            width="100%" height="100%" alt="">
+                        <div class="overlay-box rounded"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Ushortener</h3>
+                            <h6>Biner Teknologi Indonesia</h6>
+                            <div class="project-description">
+                                <span class="badge text-bg-info">NodeJS</span>
+                                <span class="badge text-bg-info">VueJS</span>
+                                <span class="badge text-bg-info">Postgresql</span>
+                                <span class="badge text-bg-info">Redis</span>
+                                <span class="badge text-bg-info">Keycloak</span>
+                                <span class="badge text-bg-info">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mb-3">
+                    <div class="image-box">
+                        <img src="./img/umeet/umeet_home.jpg" class="rounded"
+                            width="100%" height="100%" alt="">
+                        <div class="overlay-box rounded"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Umeet</h3>
+                            <h6>Biner Teknologi Indonesia</h6>
+                            <div class="project-description">
+                                <span class="badge text-bg-info">NodeJS</span>
+                                <span class="badge text-bg-info">VueJS</span>
+                                <span class="badge text-bg-info">Postgresql</span>
+                                <span class="badge text-bg-info">Keycloak</span>
+                                <span class="badge text-bg-info">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mb-3">
+                    <div class="image-box">
+                        <img src="./img/uob/uob_tts.jpg" class="rounded"
+                            width="100%" height="100%" alt="">
+                        <div class="overlay-box rounded"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">TTS UOB</h3>
+                            <h6>Biner Teknologi Indonesia</h6>
+                            <div class="project-description">
+                                <span class="badge text-bg-info">C#</span>
+                                <span class="badge text-bg-info">NuxtJS</span>
+                                <span class="badge text-bg-info">SQL Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mb-3">
+                    <div class="image-box">
+                        <img src="./img/butler/login.jpg" class="rounded"
+                            width="100%" height="100%" alt="">
+                        <div class="overlay-box rounded"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Butler</h3>
+                            <h6>Automate.id</h6>
+                            <div class="project-description">
+                                <span class="badge text-bg-info">Python</span>
+                                <span class="badge text-bg-info">VueJS</span>
+                                <span class="badge text-bg-info">Postgresql</span>
+                                <span class="badge text-bg-info">Redis</span>
+                                <span class="badge text-bg-info">Socket.IO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mb-3">
+                    <div class="image-box">
+                        <img src="./img/matamantra/matamantra_home.jpg" class="rounded"
+                            width="100%" height="100%" alt="">
+                        <div class="overlay-box rounded"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Matamantra</h3>
+                            <h6>Automate.id</h6>
+                            <div class="project-description">
+                                <span class="badge text-bg-info">Python</span>
+                                <span class="badge text-bg-info">AngularJS</span>
+                                <span class="badge text-bg-info">Postgresql</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 mb-3">
+                    <div class="image-box">
+                        <img src="./img/no_image.jpg" class="rounded"
+                            width="100%" height="100%" alt="">
+                        <div class="overlay-box rounded"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Datamantra</h3>
+                            <h6>Automate.id</h6>
+                            <div class="project-description">
+                                <span class="badge text-bg-info">NodeJS</span>
+                                <span class="badge text-bg-info">VueJS</span>
+                                <span class="badge text-bg-info">Postgresql</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mb-5 mb-md-0" style="margin-top: 5rem;" id="contact">
+            <div class="row justify-content-center">
+                <div class="d-none d-md-block col-4">
+                    <img src="./img/begin_chat.svg" width="100%" height="100%" alt="">
+                </div>
+                <div class="d-none d-md-block col-1"></div>
+                <div class="col-12 col-sm-12 col-md-7">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h2>Contact Me</h2>
+                            <div class="text-secondary">Feel free to contact me if you're interested in what I have to offer, or if you have any questions.</div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Phone">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control form-control-lg" placeholder="Company">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group mb-3">
+                                    <textarea rows="10" class="form-control form-control-lg" placeholder="Message" style="resize: none;"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-lg btn-primary bg-custom">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+        <path fill="#6C63FF" fill-opacity="1"
+            d="M0,128L21.8,122.7C43.6,117,87,107,131,101.3C174.5,96,218,96,262,101.3C305.5,107,349,117,393,133.3C436.4,149,480,171,524,186.7C567.3,203,611,213,655,192C698.2,171,742,117,785,122.7C829.1,128,873,192,916,208C960,224,1004,192,1047,176C1090.9,160,1135,160,1178,144C1221.8,128,1265,96,1309,96C1352.7,96,1396,128,1418,144L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+        </path>
+    </svg>
+
+    <section>
+        <footer>
+            <div class="social-section">
+                <a href="https://www.linkedin.com/in/kevin-surya-6b000b1b8/" target="_blank" class="social-link">
+                    <div class="social-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=6287789318854&text&type=phone_number&app_absent=0" target="_blank" class="social-link">
+                    <div class="social-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://github.com/trickas" target="_blank" class="social-link">
+                    <div class="social-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </div>
+                </a>
+                <a href="https://telegram.me/trickaz" target="_blank" class="social-link">
+                    <div class="social-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="copyright">Copyright © 2023 Kevin Surya Augusto . All rights reserved</div> 
+        </footer>
+    </section>
+    <!-- /Content -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navbar");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>

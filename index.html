@@ -660,38 +660,36 @@
                             <div class="text-secondary">Feel free to contact me if you're interested in what I have to offer, or if you have any questions.</div>
                         </div>
                     </div>
-                    <form>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Name">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control form-control-lg" placeholder="Company">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group mb-3">
-                                    <textarea rows="10" class="form-control form-control-lg" placeholder="Message" style="resize: none;"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-lg btn-primary bg-custom">Submit</button>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                                <input type="text" id="name" class="form-control form-control-lg" placeholder="Name">
                             </div>
                         </div>
-                    </form>
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                                <input type="text" id="email" class="form-control form-control-lg" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                                <input type="text" id="phone" class="form-control form-control-lg" placeholder="Phone">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group mb-3">
+                                <input type="text" id="company" class="form-control form-control-lg" placeholder="Company">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group mb-3">
+                                <textarea rows="10" id="content" class="form-control form-control-lg" placeholder="Message" style="resize: none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-lg btn-primary bg-custom" onclick="contactme(this)">Submit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -751,6 +749,26 @@
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
         });
+
+
+        function contactme(e) {
+            try {
+                console.log('dadsdsa', e)
+                // e.preventDefault()
+                const name = document.getElementById('name').value
+                const email = document.getElementById('email').value
+                const phone = document.getElementById('phone').value
+                const company = document.getElementById('company').value
+                const content = document.getElementById('content').value
+    
+                const body = `Name: ${name || '-'}\nEmail: ${email || '-'}\nPhone: ${phone || '-'}\nCompany: ${company || '-'}\nMessage: ${content || '-'}`
+                const payload = encodeURIComponent(`subject=Contact to Kevin&body=${body}`)
+                const format = `mailto:kvnsurya27@gmail.com?${payload}`
+                window.location.href = format
+            } catch (err) {
+                console.log(err)
+            }
+        }
     </script>
 </body>
 

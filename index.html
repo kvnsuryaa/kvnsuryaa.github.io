@@ -5,148 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hello I'm Kevin Surya Augusto, Backend Developer, with a deep understanding of system architecture design and API integration. Focused on delivering high-quality software and optimizing system performance.">
     <title>Kevin Surya Augusto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <style>
-        .border-custom {
-            border-color: rgb(108, 99, 255);
-        }
-
-        .bg-custom {
-            background-color: rgb(108, 99, 255);
-        }
-
-        .text-custom {
-            color: rgb(108, 99, 255);
-        }
-
-        .image-box {
-            position: relative;
-            background-color: red;
-            width: 100%;
-            height: 25rem;
-            border-radius: 20px;
-        }
-
-        .overlay-box {
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 2;
-        }
-
-        footer {
-            background-color: #6C63FF;
-            width: 100%;
-            height: 250px;
-            position: relative;
-        }
-
-        .social-section {
-            position: absolute;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            width: 100%;
-            height: 40px;
-            top: 70px;
-            bottom: 0;
-            gap: 10px;
-        }
-
-        .social-box {
-            border: 2px solid white;
-            border-radius: 10px;
-            padding: 10px;
-            width: 3rem;
-            color: white;
-        }
-
-        .copyright {
-            padding-bottom: 10px;
-            width: 100%;
-            text-align: center;
-            position: absolute;
-            font-weight: bolder;
-            color: white;
-            bottom: 0;
-        }
-
-        .scrolled {
-            transition: background-color 500ms linear;  
-            border-bottom: 2px solid black;
-            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
-        }
-
-        .job-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 100%;
-            background-color: rgb(108, 99, 255);
-            color: white;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-        }
-
-        .job-line {
-            width: 100%;
-            height: 0.5px;
-            background-color: grey;
-        }
-
-        .box-experience {
-            min-width: 30rem;
-            max-width: 30rem;
-        }
-
-        .company-content {
-            padding: 10px;
-            text-align: justify;
-        }
-
-        .company-position {
-            font-weight: bold;
-        }
-
-        .company-name {
-            font-weight: bolder;
-        }
-
-        .company-description {
-            max-width: 28rem;
-            margin-top: 10px;
-        }
-
-        .line-story {
-            height: 3rem;
-            border-left: 2px solid rgb(108, 99, 255);
-            margin-left: 50px;
-        }
-
-        .relative {
-            position: relative;
-        }
-
-        .link {
-            text-decoration: none;
-        }
-
-        .project-content {
-            position: absolute;
-            bottom: 30px;
-            left: 20px;
-            z-index: 3;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/main.css">
 </head>
 
 <body>
@@ -333,7 +195,7 @@
                                     <div class="card-body">
                                         <div class="d-flex" style="align-items: center;">
                                             <div class="company-logo">
-                                                <img src="https://cdn2.tstatic.net/tribunnewswiki/foto/bank/images/universitas-mercu-buana-logo.jpg" alt="" width="50px" height="50px">
+                                                <img src="./img/logo_umb.jpg" alt="" width="50px" height="50px">
                                             </div>
                                             <div class="d-flex flex-column ms-3">
                                                 <div class="company-name h5 mb-1">Mercubuana University</div>
@@ -742,7 +604,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script>
+        gsap.timeline().to('.per1', {attr:{width:'+=200'}, repeat:-1, yoyo:true})
+
         $(function () {
             $(document).scroll(function () {
                 var $nav = $("#navbar");

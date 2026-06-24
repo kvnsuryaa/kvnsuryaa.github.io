@@ -1,0 +1,92 @@
+{
+  "skillGroups": [
+    {
+      "label": "Backend",
+      "glyph": "{ }",
+      "items": [
+        { "name": "Node.js", "strong": true, "icon": "assets/icons/nodejs.svg" },
+        { "name": "Go", "strong": true, "icon": "assets/icons/go.svg" },
+        { "name": "Python", "strong": true, "icon": "assets/icons/python.svg" },
+        { "name": "PHP", "strong": false, "icon": "assets/icons/php.svg" },
+        { "name": "Express", "strong": false, "icon": "assets/icons/express.svg" },
+        { "name": "C# / .NET", "strong": false, "icon": "assets/icons/csharp.svg" },
+        { "name": "Java", "strong": false, "icon": "assets/icons/java.svg" }
+      ]
+    },
+    {
+      "label": "Frontend",
+      "glyph": "<>",
+      "items": [
+        { "name": "HTML / CSS", "strong": true, "icon": "assets/icons/html5.svg" },
+        { "name": "JavaScript", "strong": false, "icon": "assets/icons/javascript.svg" },
+        { "name": "React", "strong": false, "icon": "assets/icons/react.svg" },
+        { "name": "Vue", "strong": false, "icon": "assets/icons/vue.svg" },
+        { "name": "Tailwind", "strong": false, "icon": "assets/icons/tailwind.svg" },
+        { "name": "TypeScript", "strong": false, "icon": "assets/icons/typescript.svg" }
+      ]
+    },
+    {
+      "label": "DevOps",
+      "glyph": "#",
+      "items": [
+        { "name": "Git", "strong": true, "icon": "assets/icons/git.svg" },
+        { "name": "PostgreSQL", "strong": true, "icon": "assets/icons/postgresql.svg" },
+        { "name": "MySQL", "strong": true, "icon": "assets/icons/mysql.svg" },
+        { "name": "Docker", "strong": false, "icon": "assets/icons/docker.svg" },
+        { "name": "Linux", "strong": false, "icon": "assets/icons/linux.svg" },
+        { "name": "Nginx", "strong": false, "icon": "assets/icons/nginx.svg" },
+        { "name": "Apisix", "strong": false, "icon": "assets/icons/apisix.svg" },
+        { "name": "AWS", "strong": false, "icon": "assets/icons/aws.svg" }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "Mercubuana University",
+      "field": "Informatics Engineering",
+      "period": "2021 \u2014 2025"
+    },
+    {
+      "name": "Taruna Bhakti Vocational High School",
+      "field": "Software Engineering",
+      "period": "2017 \u2014 2020"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Biner Teknologi Indonesia",
+      "role": "Backend Developer",
+      "date": "Aug 2022"
+    },
+    {
+      "company": "Automate.id",
+      "role": "Backend Developer",
+      "date": "Jan 2020"
+    },
+    {
+      "company": "Warehousenesia",
+      "role": "Fullstack Developer \u00b7 Internship",
+      "date": "Oct 2019"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Ushortener",
+      "desc": "A URL shortening service with a dashboard for managing and tracking links.",
+      "tech": ["Node.js", "REST API", "MySQL"],
+      "image": "assets/images/project-ushortener.svg"
+    },
+    {
+      "title": "Umeet",
+      "desc": "Meeting scheduler that manages hosts, participants and session timing.",
+      "tech": ["Node.js", "WebSocket", "PostgreSQL"],
+      "image": "assets/images/project-umeet.svg"
+    },
+    {
+      "title": "UOB Transaction Tracking",
+      "desc": "Enterprise transaction tracking system for monitoring banking operations.",
+      "tech": ["C#", ".NET", "SQL Server"],
+      "image": "assets/images/project-uob.svg"
+    }
+  ]
+}

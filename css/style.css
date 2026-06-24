@@ -593,6 +593,10 @@ section {
   animation: dotFlow 6s linear infinite 1s;
 }
 
+.divider-dot--3 {
+  animation: dotFlow 6.5s linear infinite 2s;
+}
+
 /* ── Journey (Education + Experience) ───────────────────────────────── */
 
 .journey {
@@ -657,8 +661,6 @@ section {
   z-index: 1;
   padding: 80px 0 100px;
   background: linear-gradient(180deg, #0A0E14, #0c1119 40%, #0A0E14);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .projects-blurb {

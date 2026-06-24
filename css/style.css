@@ -383,7 +383,6 @@ section {
 .terminal-glow {
   position: absolute;
   inset: -30px;
-  background: radial-gradient(circle at 70% 40%, rgba(74, 222, 128, 0.12), transparent 65%);
   animation: floatGlow 6s ease-in-out infinite;
   pointer-events: none;
 }
